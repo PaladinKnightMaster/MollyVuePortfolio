@@ -1,40 +1,61 @@
 <template>
   <header>
-    <Navbar />
+    <Navbar class="fixed-top" id="nav" />
   </header>
-  <main>
+  <main >
+   
     <router-view />
   </main>
-   <footer class="bg-dark text-light">
-    Made with 💖 by CodeWorks
-  </footer>
 </template>
 
 <script>
-import { computed } from 'vue'
-import { AppState } from './AppState'
-import Navbar from './components/Navbar.vue'
+import { computed, onMounted } from "vue";
+import { AppState } from "./AppState";
+import Navbar from "./components/Navbar.vue";
 
 export default {
   setup() {
-    return {
-      appState: computed(() => AppState)
+    onMounted(() => {
+    
+
+      hideOnScrollTest("#nav");
+   
+    });
+
+  
+
+    function hideOnScrollTest(el) {
+      let nav = document.querySelector(`${el}`);
+
+      let prevScrollpos = window.scrollY;
+
+      // console.log(nav);
+      window.onscroll = function () {
+        let currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos) {
+          nav.style.top = "0";
+        } else {
+          nav.style.top = "-62px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
     }
+
+    return {
+      appState: computed(() => AppState),
+    };
   },
-  components: { Navbar }
-}
+  components: { Navbar },
+};
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
-:root{
-  --main-height: calc(100vh - 32px - 64px);
+#nav {
+  transition: all 0.5s ease-out;
 }
 
-
-footer {
-  display: grid;
-  place-content: center;
-  height: 32px;
+:root {
+  --main-height: calc(100vh - 64px);
 }
 </style>

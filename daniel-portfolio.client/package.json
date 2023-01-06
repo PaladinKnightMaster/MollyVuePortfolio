@@ -11,6 +11,8 @@
     "@bcwdev/auth0provider-client": "0.0.13",
     "@mdi/font": "7.0.96",
     "@popperjs/core": "2.11.6",
+    "@vueuse/core": "^9.10.0",
+    "@vueuse/motion": "^2.0.0-beta.12",
     "axios": "0.27.2",
     "bootstrap": "5.2.1",
     "socket.io-client": "4.5.2",
