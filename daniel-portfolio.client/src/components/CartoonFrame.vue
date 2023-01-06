@@ -37,7 +37,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
+  background-image: url("https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png");
   filter: brightness(78%);
   background-position: center;
   background-size: cover !important;

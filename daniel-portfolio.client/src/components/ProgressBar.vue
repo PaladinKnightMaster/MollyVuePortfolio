@@ -1,5 +1,5 @@
 <template>
-  <div class="progressContainer">
+  <div class="progressContainer  position-absolute">
     <div id="progress2" class="progress-2"></div>
     <div
       v-motion
@@ -15,20 +15,11 @@
       class=""
     >
     
-      <img
-        src="https://vignette.wikia.nocookie.net/hollowknight/images/9/94/Knight_godmaster.png/revision/latest?cb=20190129170812"
-        alt="Hollow Night"
-        class="progress bg-transparent floating tester1"
-      />
-      <img
-        src="https://www.pinclipart.com/picdir/big/572-5722312_transparent-masks-clipart-soul-hollow-knight-shade-png.png"
-        alt="Hollow Night Shade"
-        class="progress bg-transparent floating tester2 "
-      />
+    <img src="../assets/img/Goblin.png" alt="" width="60" height="60" class="elevation-6 rounded-circle">
 
-      <p class="position-absolute start-0 top-0 font-1 text-success">
+      <!-- <p class="position-absolute start-0 top-0 font-1 text-success">
         {{ percent }}
-      </p>
+      </p> -->
     </div>
   </div>
 </template>

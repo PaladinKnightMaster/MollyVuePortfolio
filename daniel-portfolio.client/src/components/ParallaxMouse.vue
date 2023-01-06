@@ -84,7 +84,7 @@ const cardStyle = computed(() => ({
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
+  background: url("https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png");
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {

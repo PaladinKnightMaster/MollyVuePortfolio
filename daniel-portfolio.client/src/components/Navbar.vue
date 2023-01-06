@@ -1,8 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-3">
+  <nav class="navbar navbar-expand-lg navbar-dark  px-3">
     <div class="d-flex me-5">
       <p class="mb-0 font-1 fs-3 text-light">Daniel Le</p>
-      <p class="mb-0 ms-4 font-1 fs-3 text-light">SoftWare Developer</p>
+      <p class="mb-0 ms-4 font-1 fs-3 text-light">
+        Full Stack SoftWare Developer
+      </p>
     </div>
     <button
       class="navbar-toggler"

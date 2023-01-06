@@ -2,7 +2,7 @@
   <header>
     <Navbar class="fixed-top" id="nav" />
   </header>
-  <main >
+  <main  class="bg-custom">
    
     <router-view />
   </main>
@@ -50,6 +50,11 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+
+.bg-custom{
+background: rgb(13,11,14);
+background: linear-gradient(180deg, rgba(13,11,14,1) 23%, rgba(23,35,78,1) 33%, rgba(110,17,22,1) 50%, rgba(252,176,69,1) 90%, rgba(102,219,233,1) 98%, rgba(0,0,0,1) 100%);
+}
 
 #nav {
   transition: all 0.5s ease-out;

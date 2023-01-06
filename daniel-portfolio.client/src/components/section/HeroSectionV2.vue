@@ -4,8 +4,14 @@
 
     
   <div
-    class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
+    class="container-fluid position-relative text-center d-flex flex-column justify-content-center align-items-center"
   >
+<div class=" no-select">
+ <iframe  class="img-fluid-1" src="https://www.youtube.com/embed/cWuzJBboQyE?mute=1&autoplay=1&playlist=cWuzJBboQyE&loop=1" title="Floating In Space - 1 hr Version - Infinite Loop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</div>
+
   <!-- <ParticleComponent /> -->
     <section
     class="locomotive-section container-fluid"
@@ -16,30 +22,30 @@
         <p
           v-motion-slide-bottom
           :delay="600"
-          class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
+          class="text-start display-6 ms-5 font-1 mb-0 text-shadow text-light"
         >
           creative
         </p>
         <p
           v-motion-slide-bottom
           :delay="1000"
-          class="font-1 display-7 mb-0 text-shadow"
+          class="font-1 display-7 mb-0 text-shadow text-light"
         >
-          Designer <b class="display-6 text-warning">&</b>
+          Problem Solver <b class="display-6 ">&</b>
         </p>
         <p
           v-motion-slide-bottom
           :delay="1500"
-          class="font-1 display-7 text-shadow"
+          class="font-1 display-7 text-shadow text-light"
         >
-          Developer
+         Critical Thinker
         </p>
       </div>
       <div id="heroText" class="col-md-6 text-end text-light">
            <p
           v-motion-slide-bottom
           :delay="600"
-          class=" display-6 font-1 mb-0 text-shadow"
+          class=" display-6 font-1 mb-0 text-shadow text-light"
         >
            Willing To Learn
         </p>
@@ -106,6 +112,13 @@ export default {
  </script>
  
  <style lang="scss" scoped>
+ .img-fluid-1{
+  height: 100vh;
+  width: 100vw;
+ }
+ .padding1{
+  padding-top: 400px;
+ }
 
  .pug-img{
  position: absolute;
@@ -127,7 +140,7 @@ export default {
   z-index: 9999;
 }
 .display-7 {
-  font-size: 10rem;
+  font-size: 6rem;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
     font-size: 6rem;

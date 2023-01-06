@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-6 section-bubble4">
+  <section id="contact" class="py-6 ">
     <div class="container gap-5">
       <div class="row">
         <div class="col-md-12 ">

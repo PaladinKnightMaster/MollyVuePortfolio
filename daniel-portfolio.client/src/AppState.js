@@ -97,6 +97,12 @@ export const AppState = reactive({
       id: 13,
     },
     {
+      title: "Docker",
+      src: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
+      type: "tech",
+      id: 13,
+    },
+    {
       title: "Github",
       src: "https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png",
       type: "tech",

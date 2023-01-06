@@ -21,7 +21,7 @@
   </div>
 
   <!-- SECTION FOOTER  -->
-  <div class="container-fluid section-bubble5 py-4 test" >
+  <div class="container-fluid bg-dark py-4 test" >
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center icons d-md-none">
            <PhoneIcon />

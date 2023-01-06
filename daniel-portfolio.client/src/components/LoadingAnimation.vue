@@ -183,7 +183,7 @@ h2 {
   height: 100vh;
   /* always scale the image to the appropriate size of your screen */
   background-size: cover;
-  background-image: url(https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg);
+  background-image: url(https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png);
   background-position: center;
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed;

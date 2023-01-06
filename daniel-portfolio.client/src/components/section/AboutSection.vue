@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about py-5 mt-0 section-bubble1 text-light font-1">
+  <section id="about" class="about py-5 mt-0 text-light font-1 ">
     <div class="container">
       <div class="d-flex justify-content-between">
         <div class="section-title display-3">
@@ -21,28 +21,37 @@
         <div
           class="col-lg-8 pt-4 pt-lg-0 content px-md-5 d-flex align-items-center"
         >
+
+
+
+
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
-            Hello! My name is Tung and I
-            <b class="text-light darken-10">LOVE</b> design and creating. I
-            don't have any specific style. I prefer to adapt to each project and
-            use it as to new things and expand my knowledge, Keeping the good
-            and learning from the bad. I was immeditaley captivated with web
-            development upon my first
-            <b class="text-light darken-10">"Hello World!" </b> 1 year ago. I
-            have a strong foundation in both front-end and back-end development,
-            and I am always looking for ways to expand my skillset. I am highly
-            creative and love coming up with new and innovative solutions for my
-            projects. With my love for creativity and a thirst for knowledge,
-            during my free time you can find me tinkering with new technologies
-            with my projects or learning about the latest design trends. I am a
-            problem-solver at heart and enjoy the challenge of finding creative
-            solutions to complex problems and passionate about creating
-            beautiful and functional websites that deliver an exceptional user
-            experience. "
+            Hi, my name is Daniel Le and I am a full stack developer. I am
+            highly skilled in problem solving and critical thinking, with a
+            strong foundation in both front and back end development with a love
+            of finding creative solutions to complex problems.
+            <br />
+            As a developer, I am fascinated by dev ops and programming
+            architecture, and I enjoy researching documentation and exploring
+            open source software in my free time. I am a problem solver at heart
+            and am passionate about creating functional and smooth websites and
+            apps that deliver solid performance.
+            <br />
+            I have a strong foundation in back end development and am skilled in
+            technologies such as Node.js, Express, and SQL. I am always eager to
+            learn and grow as a developer, and I take pride in my ability to
+            adapt and learn new technologies quickly.
+            <br />
+            I believe that great software is built on a foundation of clear
+            communication and collaboration, and I strive to work with my team
+            members to create the best possible product. Thank you for taking
+            the time to read a little about me. I look forward to the
+            opportunity to work with you and contribute my skills and expertise
+            to your project.
           </p>
         </div>
       </div>
@@ -51,9 +60,8 @@
         <div class="col-md-6 text-center">
           <p class="font-1 fs-4 text-warning">Current Favorite Song</p>
           <iframe
-            class="elevation-6"
             style="border-radius: 12px"
-            src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/track/7MZM9KhwGQG8QJ4BycsnQn?utm_source=generator"
             width="100%"
             height="152"
             frameBorder="0"
@@ -84,82 +92,6 @@
       </div>
     </div>
     <!-- <BlockQuote/> -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="font-1 fs-4 text-warning">Some of my artwork</p>
-          <p class="font-2 fs-5 text-light text-center">
-            I love drawing mandalas as a way of relaxation and creative outlet
-            that allows me to express myself and explore new ideas. Having a
-            background in art as helped me develop valuable skills such as
-            attention to detail, problem-solving, and the ability to visualize
-            and communicate solutions to complex problems and to communicate
-            more effectively with colleagues and clients. Finally, My artwork is
-            a source of personal satisfaction and pride, which aids me to
-            maintaining motivation and a positive outlook in my career and life.
-          </p>
-        </div>
-
-        <div class="d-flex flex-wrap justify-content-around">
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/SunflowerStar.png"
-                alt=""
-                class="procreate-art"
-              />
-            </ParallaxMouse>
-          </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/Trex.png"
-                alt=""
-                class="procreate-art"
-              />
-            </ParallaxMouse>
-          </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/CosmicWolf.png"
-                alt=""
-                class="procreate-art perspective-right"
-              />
-            </ParallaxMouse>
-          </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/Mandala1.png"
-                alt=""
-                class="procreate-art perspective-left"
-              />
-            </ParallaxMouse>
-          </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/Mandala2.png"
-                alt=""
-                class="procreate-art perspective-right"
-              />
-            </ParallaxMouse>
-          </div>
-
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
-            <ParallaxMouse>
-              <img
-                src="../../assets/img/Procreate/Turtle.png"
-                alt=""
-                class="procreate-art perspective-left"
-              />
-            </ParallaxMouse>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 
@@ -168,6 +100,7 @@ import { computed } from "@vue/reactivity";
 import { useParallax } from "@vueuse/core";
 import { onMounted, ref, watchEffect } from "vue";
 import ParallaxMouse from "../ParallaxMouse.vue";
+
 
 export default {
   props: {},
@@ -187,7 +120,7 @@ export default {
       container,
     };
   },
-  components: { ParallaxMouse },
+  components: { ParallaxMouse},
 };
 </script>
 
@@ -210,7 +143,7 @@ export default {
   transition: all 0.5s ease;
 }
 .box {
-  background-image: url("../../assets/img/Tungle/TungPortrait.jpg");
+  background-image: url("https://cdn.discordapp.com/attachments/262286883000811520/1060759843536904233/Daniel_Le.1.jpg");
   border: solid black;
   border-color: black;
   background-position: center;
@@ -240,7 +173,7 @@ export default {
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
+  background: url("https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png");
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {

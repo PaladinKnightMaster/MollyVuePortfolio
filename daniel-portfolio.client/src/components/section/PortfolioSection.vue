@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolio" class="py-5 section-bubble3">
+  <section id="portfolio" class="py-5 ">
     <div class="container">
       <div class="section-title d-flex">
         <h1 class="font-1 text-light">Portfolio</h1>
@@ -12,7 +12,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/samadhiApp.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060067418073993226/samadhiApp.png?width=720&height=399"
               class="img-fluid elevation-6 rounded"
               alt="Project Image"
             />
@@ -225,7 +225,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/BetterAfterBooks.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060067418820579439/BetterAfterBooks.png?width=720&height=390"
               class="img-fluid elevation-5 rounded"
               alt="Project Image"
             />
@@ -240,7 +240,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/KeeprSS.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060068161329827850/keeperApp.png?width=720&height=413"
               class="img-fluid elevation-6 rounded"
               alt="Project Image"
             />

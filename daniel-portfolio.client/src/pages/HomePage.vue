@@ -13,8 +13,11 @@
         <!-- Add your main page content here -->
         <HeroSectionV2 />
         <AboutSection />
+
         <ExperienceSection />
+    
         <PortfolioSection />
+    
         <ContactSection />
         <div class="position-relative"></div>
         <SocialBar />

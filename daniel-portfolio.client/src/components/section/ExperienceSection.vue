@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="py-5 section-bubble2">
+  <section id="experience" class="py-5 ">
     <div class="container">
       <div class="section-title">
         <h1
@@ -77,27 +77,6 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
- <div class="row">
-        <div class="col-md-4">
-          <a href="https://github.com/TungLe0319" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
-              alt=""
-              class="elevation-6 rounded"
-            />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/TungLe0319" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
-              alt=""
-              class="elevation-6 rounded"
-            />
-          </a>
-        </div>
-      </div>
-
 
 
 
@@ -135,7 +114,7 @@
             </li>
           </ul>
         </div>
-        <div class="image-container row g-3">
+        <div class="image-container row g-3 justify-content-center">
           <div
             class="col-6 col-md-2 image-item"
             v-for="s in skillsIcons"
@@ -217,9 +196,7 @@
             ></i> -->
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center"></div>
-        </div>
+      
       </div>
 
       <!-- SECTION DEVSOPPORTUNITIES -->
@@ -231,40 +208,46 @@
         </div>
 
         <div class="col-md-6">
-          <div
+       <div class="row">
+        <div class="col-md-6">
+   <div
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="card border-0 elevation-6 text-center"
           >
             <img
-              src="https://fireship.io/courses/react-next-firebase/img/featured.png"
-              alt=""
-              class="rounded img-fluid"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ScQpzKmWalxq0KeWWBux-gHaD4%26pid%3DApi&f=1&ipt=0fd2170aa01a2dbe148cac426af933086226376185d4ad2eed12e5341c1c6e3c&ipo=images"
+              alt="ks3 image"
+              class="rounded img-fluid elevation-6"
             />
           </div>
         </div>
+        <div class="col-md-6">
+   <div
+            v-motion-slide-visible-once-bottom
+            :delay="300"
+            class="card border-0 elevation-6 text-center"
+          >
+            <img
+              src="https://www.jrenterprisesolutions.com/files/2020/05/Docker-Logo-White-RGB_Vertical-BG_0.png"
+              alt="docker image"
+              class="rounded img-fluid elevation-6"
+            />
+          </div>
+        </div>
+       </div>
+        </div>
+       
         <div class="col-md-6">
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="font-2 text-light"
           >
-            The
-            <a href="https://fireship.io/">
-              <img
-                src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
-                alt=""
-                width="40"
-              />
-              <b class="text-light darken-10"> Fireship.io's </b>
-            </a>
-            Next.js and Firebase course is a learning opportunity that focuses
-            on teaching developers how to use two popular technologies for
-            building modern web applications. Next.js is a framework for
-            building server-rendered React applications, and Firebase is a suite
-            of tools for building and deploying applications in the cloud.The
-            course covers topics such as server-side rendering, authentication,
-            data storage, and deployment, among others.
+        I am attempting to teach myself on learning K3s Kubernetes and Docker. Both Kubernetes and Docker are popular open-source containerization platforms that enable developers to deploy and manage applications in a flexible and scalable way.
+ <br>
+I am excited to continue learning and to explore the ways in which they can help me to improve the performance, security, and scalability of my applications. I am also looking into the implementation and documentation of both technologies, as I believe that a strong understanding of their underlying principles and best practices is essential for effective development.
+          
           </p>
         </div>
       </div>

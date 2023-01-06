@@ -105,9 +105,9 @@ form:invalid button[type="submit"] {
 $spacer-height: 20vw;
 $section1-bg-color: #ffffff;
 $section2-bg-color: #ffd2b0;
-$section3-bg-color: #234755;
+$section3-bg-color: #9d0b22;
 $section4-bg-color: #cccccc;
-$section5-bg-color: #212529;
+$section5-bg-color: #060005;
 
 @mixin bubbles($bubbles-type, $color) {
   @if $bubbles-type == a {
