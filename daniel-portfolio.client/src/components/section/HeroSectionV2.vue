@@ -1,135 +1,139 @@
 <template>
+  <!-- Your section content goes here -->
 
-    <!-- Your section content goes here -->
-
-    
   <div
-    class="container-fluid position-relative text-center d-flex flex-column justify-content-center align-items-center"
+    class="container-fluid position-relative text-center d-flex flex-column justify-content-center align-items-center hero-image"
   >
-<div class=" no-select">
- <iframe  class="img-fluid-1" src="https://www.youtube.com/embed/cWuzJBboQyE?mute=1&autoplay=1&playlist=cWuzJBboQyE&loop=1" title="Floating In Space - 1 hr Version - Infinite Loop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-</div>
-
-  <!-- <ParticleComponent /> -->
-    <section
-    class="locomotive-section container-fluid"
-    :style="{ transform: `translateY(-${scrollY}px)` }"
-  >
-    <div class="row justify-content-between w-100">
-      <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
-        <p
-          v-motion-slide-bottom
-          :delay="600"
-          class="text-start display-6 ms-5 font-1 mb-0 text-shadow text-light"
-        >
-          creative
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1000"
-          class="font-1 display-7 mb-0 text-shadow text-light"
-        >
-          Problem Solver <b class="display-6 ">&</b>
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1500"
-          class="font-1 display-7 text-shadow text-light"
-        >
-         Critical Thinker
-        </p>
-      </div>
-      <div id="heroText" class="col-md-6 text-end text-light">
-           <p
-          v-motion-slide-bottom
-          :delay="600"
-          class=" display-6 font-1 mb-0 text-shadow text-light"
-        >
-           Willing To Learn
-        </p>
-         <p
-          v-motion-slide-bottom
-          :delay="600"
-          class="  display-1 font-1 mb-0 text-shadow"
-        >
-        Anything
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1000"
-          class="font-1 display-1 mb-0 text-shadow"
-        >
-          Anytime
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1500"
-          class="font-1 display-1 text-shadow"
-        >
-          Anywhere
-        </p>
-      </div>
+    <div
+      class="video-container position-absolute d-flex justify-content-center"
+    >
+      <video
+        src="../../assets/img/spaceman.mp4"
+        width="100" height="1004" object-fit="cover" 
+        loop
+        muted
+        autoplay
+      class="object-fit"
+      ></video>
     </div>
-   
 
-  
-  </section>
-  <GentleWave />
-   
+    <!-- <ParticleComponent /> -->
+    <section
+      class="locomotive-section container-fluid"
+      :style="{ transform: `translateY(-${scrollY}px)` }"
+    >
+      <div class="row justify-content-between w-100">
+        <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="text-start display-6 ms-5 font-1 mb-0 text-shadow text-light"
+          >
+            creative
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1000"
+            class="font-1 display-7 mb-0 text-shadow text-light"
+          >
+            Problem Solver <b class="display-6">&</b>
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1500"
+            class="font-1 display-7 text-shadow text-light"
+          >
+            Critical Thinker
+          </p>
+        </div>
+        <div id="heroText" class="col-md-6 text-end text-light">
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="display-6 font-1 mb-0 text-shadow text-light"
+          >
+            Willing To Learn
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="display-1 font-1 mb-0 text-shadow"
+          >
+            Anything
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1000"
+            class="font-1 display-1 mb-0 text-shadow"
+          >
+            Anytime
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1500"
+            class="font-1 display-1 text-shadow"
+          >
+            Anywhere
+          </p>
+        </div>
+      </div>
+    </section>
+    <GentleWave />
   </div>
-
 </template>
 
- 
- <script>
+<script>
 import { onMounted, ref, watchEffect } from "vue";
 import ParticleComponent from "../ParticleComponent.vue";
 
 export default {
-    name: "LocomotiveSection",
-    setup() {
-        // Create a reactive data model for the scroll position
-        const scrollY = ref(0);
-        // Add a scroll listener to update the scroll position
-        onMounted(() => {
-            window.addEventListener("scroll", () => {
-          
-                scrollY.value = window.scrollY;
-               
-            
-            });
-        });
-        // Return the scroll position to the component
-        return {
-            scrollY
-        };
-    },
-    components: { ParticleComponent }
+  name: "LocomotiveSection",
+  setup() {
+    // Create a reactive data model for the scroll position
+    const scrollY = ref(0);
+    // Add a scroll listener to update the scroll position
+    onMounted(() => {
+      window.addEventListener("scroll", () => {
+        scrollY.value = window.scrollY;
+      });
+    });
+    // Return the scroll position to the component
+    return {
+      scrollY,
+    };
+  },
+  components: { ParticleComponent },
 };
+</script>
 
- </script>
+<style lang="scss" scoped>
+
+video {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+}
+.video-container {
+  height: 100vh;
  
- <style lang="scss" scoped>
- .img-fluid-1{
+}
+.img-fluid-1 {
   height: 100vh;
   width: 100vw;
- }
- .padding1{
+}
+.padding1 {
   padding-top: 400px;
- }
+}
 
- .pug-img{
- position: absolute;
- width: auto;
- 
- transform: translateY(450px);
- height: 300px;
+.pug-img {
+  position: absolute;
+  width: auto;
 
- }
+  transform: translateY(450px);
+  height: 300px;
+}
 
-.locomotive-section{
+.locomotive-section {
   transition: transform 0.75s ease;
 }
 
@@ -143,7 +147,7 @@ export default {
   font-size: 6rem;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    font-size: 6rem;
+    font-size: 2.5rem;
   }
 }
 #heroText {
@@ -176,12 +180,9 @@ export default {
   height: 100vh;
   /* always scale the image to the appropriate size of your screen */
   background-size: cover;
-  background-image: url(https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png);
+
   background-position: center;
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed;
 }
-
-
- </style>
- 
+</style>
