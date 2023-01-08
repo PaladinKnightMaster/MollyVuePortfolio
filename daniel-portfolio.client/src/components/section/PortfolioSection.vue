@@ -10,7 +10,7 @@
         <div class="col-md-7">
           <a href="https://www.samadhiyogaidaho.com/#/" target="_blank">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060067418073993226/samadhiApp.png?width=720&height=399"
               class="img-fluid elevation-6 rounded"
@@ -22,14 +22,14 @@
           <div class="d-flex">
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -38,7 +38,7 @@
             </div>
             <div class="ms-4">
               <a
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 href="https://www.samadhiyogaidaho.com/#/"
                 class="mb-2"
@@ -53,12 +53,12 @@
           </div>
 
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-once-bottom
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="800"
               class="card-body font-2"
             >
@@ -77,35 +77,35 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 BootStrap
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 MongoDb
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 PocketBase
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
@@ -124,7 +124,7 @@
            <div class="d-flex justify-content-end">
               <div class="me-4">
               <a
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 target="_blank"
                 href="https://betterafterbooks.apps.devopportunities.dev/"
@@ -139,14 +139,14 @@
             </div>
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -156,13 +156,13 @@
           
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-once-bottom
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
             style="z-index: 9"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="800"
               class="card-body text-start font-2"
             >
@@ -180,35 +180,35 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 C#
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 DotNet
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 MySQL
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
@@ -223,7 +223,7 @@
             target="_blank"
           >
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060067418820579439/BetterAfterBooks.png?width=720&height=390"
               class="img-fluid elevation-5 rounded"
@@ -238,7 +238,7 @@
         <div class="col-md-7">
           <a target="_blank" href="https://keepr-project-demo.onrender.com">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060068161329827850/keeperApp.png?width=720&height=413"
               class="img-fluid elevation-6 rounded"
@@ -250,14 +250,14 @@
            <div class="d-flex">
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -266,7 +266,7 @@
             </div>
             <div class="ms-4">
               <a
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 target="_blank"
                 href="https://keepr-project-demo.onrender.com"
@@ -281,12 +281,12 @@
             </div>
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-once-bottom
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="800"
               class="card-body font-2"
             >
@@ -304,21 +304,21 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 HTML
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 CSS
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
@@ -336,7 +336,7 @@
            <div class="d-flex justify-content-end">
              <div class="me-4">
               <a
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 href="https://thetower-f4he.onrender.com"
                 class="mb-2"
@@ -350,14 +350,14 @@
             </div>
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -367,13 +367,13 @@
            
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-once-bottom
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
             style="z-index: 9"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="800"
               class="card-body text-start font-2"
             >
@@ -386,28 +386,28 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 Node.Js & Express
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
                 BootStrap
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-once-bottom
                 :delay="300"
                 class="list-group-item"
               >
@@ -419,7 +419,7 @@
         <div class="col-md-7 order-0 order-md-1">
           <a href="https://thetower-f4he.onrender.com" target="_blank">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-once-bottom
               :delay="500"
               src="https://cdn.discordapp.com/attachments/1060066788878069891/1060067418464075877/TowerSS.png"
               class="img-fluid elevation-5 rounded"
