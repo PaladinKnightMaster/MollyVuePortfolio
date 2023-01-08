@@ -244,7 +244,7 @@
             :delay="300"
             class="font-2 text-light"
           >
-        I am attempting to teach myself on learning K3s Kubernetes and Docker. Both Kubernetes and Docker are popular open-source containerization platforms that enable developers to deploy and manage applications in a flexible and scalable way.
+        I am attempting to teach myself on learning K3s Kubernetes and Docker. Kubernetes and Docker are popular technologies for containerizing and deploying applications in a flexible and scalable way.
  <br>
 I am excited to continue learning and to explore the ways in which they can help me to improve the performance, security, and scalability of my applications. I am also looking into the implementation and documentation of both technologies, as I believe that a strong understanding of their underlying principles and best practices is essential for effective development.
           
@@ -340,7 +340,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 
 
 

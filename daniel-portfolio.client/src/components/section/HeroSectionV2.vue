@@ -8,13 +8,15 @@
       class="video-container position-absolute d-flex justify-content-center"
     >
       <video
-        src="../../assets/img/spaceman.mp4"
+   
+        src="../../assets/img/spacemanFull.mp4"
         width="100" height="1004" object-fit="cover" 
         loop
         muted
         autoplay
       class="object-fit"
       ></video>
+     
     </div>
 
     <!-- <ParticleComponent /> -->
@@ -83,8 +85,10 @@
 </template>
 
 <script>
+import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import ParticleComponent from "../ParticleComponent.vue";
+import { AppState } from "../../AppState.js";
 
 export default {
   name: "LocomotiveSection",
@@ -100,6 +104,7 @@ export default {
     // Return the scroll position to the component
     return {
       scrollY,
+      spaceman: computed(() => AppState.spaceman)
     };
   },
   components: { ParticleComponent },

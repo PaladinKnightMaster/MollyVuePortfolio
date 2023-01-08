@@ -1,13 +1,13 @@
 <template>
   <div class="hero-image d-flex flex-column justify-content-center align-items-center">
    
-    <div class="col-md-12 text-center">
+    <!-- <div class="col-md-12 text-center">
      
           <h1 class="display-3 font-1 text-dark testing">
             WELCOME TO MY DEVELOPER PORTFOLIO
           </h1>
       
-      </div>
+      </div> -->
     <div class="row" style="margin-top:100px">
       
       <div class="col-md-12">
@@ -33,24 +33,24 @@ export default {
   setup(props) {
     const editable = ref({});
 
-    onMounted(() => {
-      const element = document.querySelector("h1.testing");
-      const parent = element.parentNode;
+    // onMounted(() => {
+    //   const element = document.querySelector("h1.testing");
+    //   const parent = element.parentNode;
 
-      // Use an intersection observer to call the typeWriter function when the element comes into view
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          typeWriter(element);
-          observer.unobserve(parent);
-        }
-      });
-      observer.observe(parent);
-    });
-    watchEffect(() => {});
+    //   // Use an intersection observer to call the typeWriter function when the element comes into view
+    //   const observer = new IntersectionObserver((entries) => {
+    //     if (entries[0].isIntersecting) {
+    //       typeWriter(element);
+    //       observer.unobserve(parent);
+    //     }
+    //   });
+    //   observer.observe(parent);
+    // });
+    // watchEffect(() => {});
 
     return {
       editable,
-      typeWriter
+      // typeWriter
     };
   },
 };

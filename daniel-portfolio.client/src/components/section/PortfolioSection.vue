@@ -432,91 +432,7 @@
     </div>
 
     <div class="container mt-6" >
-      <!-- SECTION ArchivedProjects -->
-      <!-- <div class="row g-3">
-        <div class="col-md-12 text-center">
-          <p class="font-1 fs-2 text-warning">Other Noteworthy Projects</p>
-          <p class="font-2 text-light darken-10">
-            Please Note that some of these projects are hosted on
-            <a
-              target="_blank"
-              href="https://render.com/"
-              class="bg-light rounded p-2"
-            >
-              <img
-                src="https://techcrunch.com/wp-content/uploads/2019/10/render-logo-wordmark.png?w=764"
-                alt="Render Logo"
-                title="Render Logo"
-                width="150"
-                height="50"
-              />
-            </a>
-            as such can take up to <b>1-2 minutes</b> to fully load. <br />
-            I appreciate your patience and hope you enjoy any of my projects.
-          </p>
-        </div>
 
-        <div class="col-md-4" v-for="a in archivedProjects">
-          <div
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="card elevation-6 border-0 p-2 bg-primary archived-project-card"
-          >
-            <div class="d-flex justify-content-between">
-              <i
-                v-motion-slide-visible-once-bottom
-                :delay="400"
-                class="mdi mdi-folder fs-3 text-warning"
-              ></i>
-              <div class="d-flex align-items-center">
-                <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
-                <a
-                  v-motion-slide-visible-once-bottom
-                  :delay="600"
-                  :href="a.externalLink"
-                  class="ms-3"
-                    target="_blank"
-                >
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/5873/5873833.png"
-                    alt="External Link to Webpage"
-                    width="30"
-                    height="30"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="">
-              <p
-                v-motion-slide-visible-once-bottom
-                :delay="700"
-                class="fs-3 font-1"
-              >
-                {{ a.title }}
-              </p>
-              <p
-                v-motion-slide-visible-once-bottom
-                :delay="900"
-                class="text-light font-2"
-              >
-                {{ a.description }}
-              </p>
-            </div>
-            <div class="">
-              <ul class="list-group list-group-horizontal">
-                <li
-                  class="list-group-item text-light darken-10"
-                  v-for="t in a.tech"
-                >
-                  {{ t }}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- !SECTION ArchivedProjects -->
       <!-- SECTION LLC PROJECTS -->
       <div id="devProjects" class="row g-3 my-5">
         <div
@@ -532,7 +448,7 @@
           </p>
         </div>
 
-        <div @mouseenter="test" class="col-md-6 test" v-for="d in devProjects">
+        <div  class="col-md-6 test" v-for="d in devProjects">
           <ProjectCard :project="d" />
         </div>
       </div>
@@ -559,9 +475,6 @@ export default {
       projects: computed(() => AppState.portfolioImages),
       archivedProjects: computed(() => AppState.archivedProjects),
       devProjects: computed(() => AppState.devProjects),
-      test() {
-        console.log("hi");
-      },
     };
   },
   components: { GitHubIcon },

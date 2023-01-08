@@ -15,7 +15,7 @@
       class=""
     >
     
-    <img src="../assets/img/Goblin.png" alt="" width="60" height="60" class="elevation-6 rounded-circle">
+    <img src="../assets/img/space-logo.jpeg" alt="" width="60" height="60" class="elevation-6 rounded-circle">
 
       <!-- <p class="position-absolute start-0 top-0 font-1 text-success">
         {{ percent }}

@@ -15,9 +15,9 @@
         <AboutSection />
 
         <ExperienceSection />
-    
+
         <PortfolioSection />
-    
+
         <ContactSection />
         <div class="position-relative"></div>
         <SocialBar />
@@ -35,29 +35,32 @@ import PortfolioSection from "../components/section/PortfolioSection.vue";
 import ExperienceSection from "../components/section/ExperienceSection.vue";
 import SocialBar from "../components/SocialBar.vue";
 import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
+import Pop from "../utils/Pop";
+import { onMounted } from "vue";
+// import LoadingAnimation from "../components/LoadingAnimation.vue";
 
 export default {
   data() {
+  
     return {
       mainLoaded: false,
     };
   },
   mounted() {
-    // Wait 2 seconds before loading the main page
     setTimeout(() => {
       this.mainLoaded = true;
-    }, 1000);
+    }, 500);
   },
   components: {
-  
     AboutSection,
     PortfolioSection,
     ExperienceSection,
     ContactSection,
     SocialBar,
     EmailBar,
-    HeroSectionV2
-},
+    HeroSectionV2,
+    // LoadingAnimation
+  },
 };
 </script>
 

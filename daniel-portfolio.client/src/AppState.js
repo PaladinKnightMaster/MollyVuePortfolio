@@ -5,16 +5,17 @@ export const AppState = reactive({
   user: {},
   /** @type {import('./models/Account.js').Account} */
   account: {},
+  spaceman: "./assets/img/spacemanFull.mp4",
 
   percent: 0,
-  portfolioImages: [
-    "../../assets/img/portfolio/InspireSS.png",
-    "../../assets/img/portfolio/DimensionMiner.png",
-    "../../assets/img/portfolio/ImGame.png",
-    "../../assets/img/portfolio/KeeprSS.png",
-    "../../assets/img/portfolio/Network.png",
-    "../../assets/img/portfolio/TowerSS.png",
-  ],
+  // portfolioImages: [
+  //   "../../assets/img/portfolio/InspireSS.png",
+  //   "../../assets/img/portfolio/DimensionMiner.png",
+  //   "../../assets/img/portfolio/ImGame.png",
+  //   "../../assets/img/portfolio/KeeprSS.png",
+  //   "../../assets/img/portfolio/Network.png",
+  //   "../../assets/img/portfolio/TowerSS.png",
+  // ],
 
   skillsIcons: [
     {
@@ -145,7 +146,6 @@ export const AppState = reactive({
       title: `SamadhiYogaIdaho`,
       description: "Details listed Above",
       tech: [],
-
       externalLink: "",
       img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418073993226/samadhiApp.png",
     },
@@ -153,7 +153,6 @@ export const AppState = reactive({
       title: `RCMF`,
       description: "Randy Carpenter Memorial Foundation website.",
       tech: ["Vue", "BootStrap"],
-
       externalLink: "",
       img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060068162185465917/rcmfApp.png",
     },
@@ -161,7 +160,6 @@ export const AppState = reactive({
       title: ` SoftBall Website`,
       description: "Website for Centennial HighSchool's Softball team ",
       tech: ["Vue", "BootStrap"],
-
       externalLink: "",
       img: "https://cdn.discordapp.com/attachments/1051960755311890454/1060304889227509820/image.png",
     },
