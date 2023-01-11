@@ -93,7 +93,7 @@ export const AppState = reactive({
     },
     {
       title: "MongoDb",
-      src: "http://www.lafabriquedecode.com/blog/wp-content/uploads/2013/04/mongo_logo.png",
+      src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
       type: "database",
       id: 13,
     },
