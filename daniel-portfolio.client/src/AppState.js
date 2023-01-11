@@ -203,7 +203,6 @@ export const AppState = reactive({
       description:
         "Custom Designed and built website for a small yoga business owner client. The app will allow users to easily browse and sign up for classes, view class schedules, and purchase memberships and packages. It will also include a feature for teachers to manage their schedules and events, to manage customer information and Integrated Ghost for CMS blog publishing feature. The SPA will be optimized for both desktop and mobile use, making it convenient for users to access from any device. Overall, the goal of the app is to provide a seamless and convenient experience for both the business and its customers.",
       tech: ["Vue", "BootStrap"],
-
       externalLink: "https://www.samadhiyogaidaho.com/#/",
       img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418073993226/samadhiApp.png",
     },
