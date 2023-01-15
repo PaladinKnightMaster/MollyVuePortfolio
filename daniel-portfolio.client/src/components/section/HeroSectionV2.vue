@@ -8,15 +8,15 @@
       class="video-container position-absolute d-flex justify-content-center"
     >
       <video
-   
+
         src="../../assets/img/spacemanFull.mp4"
-        width="100" height="1004" object-fit="cover" 
+        width="200" height="1004" object-fit="cover"
         loop
         muted
         autoplay
       class="object-fit"
       ></video>
-     
+
     </div>
 
     <!-- <ParticleComponent /> -->
@@ -120,7 +120,7 @@ video {
 }
 .video-container {
   height: 100vh;
- 
+  width: 100%
 }
 .img-fluid-1 {
   height: 100vh;
