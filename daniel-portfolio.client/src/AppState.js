@@ -207,4 +207,5 @@ export const AppState = reactive({
       img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418073993226/samadhiApp.png",
     },
   ],
+  // new
 });
