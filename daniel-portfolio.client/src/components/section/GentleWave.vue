@@ -33,12 +33,9 @@
 </template>
 
 <script>
-import { onMounted, ref, watchEffect } from "vue";
-
 export default {
   setup() {
     return {
-      editable,
     };
   },
 };
