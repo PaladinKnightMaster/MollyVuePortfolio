@@ -1,27 +1,27 @@
-name: Build and Test
+# name: Build and Test
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build and Test Client
-      run: |
-        cd daniel-portfolio.client
-        npm install
-        npm run build
-        # run the command to test your client here
-        # e.g. npm run test
-    - name: Add changes
-      run: git add .
-    - name: Commit changes
-      run: git commit -m "auto-build and test"
-    - name: Push changes
-      run: git push origin main
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Build and Test Client
+#       run: |
+#         cd daniel-portfolio.client
+#         npm install
+#         npm run build
+#         # run the command to test your client here
+#         # e.g. npm run test
+#     - name: Add changes
+#       run: git add .
+#     - name: Commit changes
+#       run: git commit -m "auto-build and test"
+#     - name: Push changes
+#       run: git push origin main
 
