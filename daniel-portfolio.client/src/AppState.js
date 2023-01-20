@@ -32,7 +32,7 @@ export const AppState = reactive({
     },
     {
       title: "JavaScript ES6",
-      src: "https://www.britefish.net/wp-content/uploads/2019/06/logo-javascript-2-1024x1024.png",
+      src: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
       type: "lang",
       id: 3,
     },
@@ -55,6 +55,12 @@ export const AppState = reactive({
       id: 6,
     },
     {
+      title: "Next.js",
+      src: "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
+      type: "framework",
+      id: 6,
+    },
+    {
       title: "DotNet Core",
       src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
       type: "framework",
@@ -62,7 +68,7 @@ export const AppState = reactive({
     },
     {
       title: "BootStrap ",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/420px-Bootstrap_logo.svg.png",
+      src: "https://pluspng.com/img-png/bootstrap-logo-vector-png-bem-with-bootstrap-bootstrap-logo-1024.png",
       type: "framework",
       id: 8,
     },
@@ -86,6 +92,12 @@ export const AppState = reactive({
       id: 11,
     },
     {
+      title: "Auth0",
+      src: "https://www.pngrepo.com/png/349297/512/auth0.png",
+      type: "tech",
+      id: 11,
+    },
+    {
       title: "Scrum",
       src: "https://i.pinimg.com/originals/71/26/cd/7126cdceaae0b3225e4af95d593a7236.png",
       type: "tech",
@@ -95,12 +107,6 @@ export const AppState = reactive({
       title: "MongoDb",
       src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
       type: "database",
-      id: 13,
-    },
-    {
-      title: "Docker",
-      src: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
-      type: "tech",
       id: 13,
     },
     {
@@ -116,6 +122,12 @@ export const AppState = reactive({
       id: 15,
     },
     {
+      title: "Git",
+      src: "https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png",
+      type: "tech",
+      id: 15,
+    },
+    {
       title: "Postman",
       src: "https://blog.scottlogic.com/smangan/assets/postman.png",
       type: "tech",
@@ -123,7 +135,7 @@ export const AppState = reactive({
     },
     {
       title: "Figma",
-      src: "https://jenniferzlu.com/img/logo/figma.png",
+      src: "https://cdn.iconscout.com/icon/free/png-512/figma-1693589-1442630.png",
       type: "tech",
       id: 17,
     },
@@ -134,8 +146,20 @@ export const AppState = reactive({
       id: 18,
     },
     {
+      title: "PocketBase",
+      src: "https://pbs.twimg.com/profile_images/1544692814822391811/s2hcCido_400x400.png",
+      type: "database",
+      id: 18,
+    },
+    {
       title: "Trello",
       src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
+      type: "tech",
+      id: 19,
+    },
+    {
+      title: "Slack",
+      src: "https://cdn2.hubspot.net/hubfs/521324/slack-logo.png",
       type: "tech",
       id: 19,
     },
