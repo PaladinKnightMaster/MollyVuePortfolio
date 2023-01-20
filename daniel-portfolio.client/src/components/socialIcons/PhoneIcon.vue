@@ -1,5 +1,5 @@
 <template>
-  <a href="tel:208905308">
+  <a href="tel:2088632203">
     <i class="mdi mdi-phone fs-3 text-light" title="Phone Number"></i>
   </a>
 </template>

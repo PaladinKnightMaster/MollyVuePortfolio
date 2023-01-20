@@ -29,8 +29,8 @@
         <LinkedInIcon />
       </div>
       <div class="col-md-12 text-center">
-        <p>Designed & Built by <b> Tung Le</b></p>
-        <p>Copyright &copy; 2023 Tung Le</p>
+        <p>Designed & Built by <b> DevOpportunitiesLLC</b></p>
+        <p>Copyright &copy; 2023 DevOpportunitiesLLC</p>
       </div>
     </div>
   </div>

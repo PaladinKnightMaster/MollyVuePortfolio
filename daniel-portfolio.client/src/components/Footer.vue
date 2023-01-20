@@ -1,8 +1,8 @@
-<template>
+<!-- <template>
 <div class="container">
   <div class="row">
     <div class="col-md-example">
-      <p class="font-1"> Designed & Built by Tung Le</p>
+      <p class="font-1"> Designed & Built by DevOpportunitiesLLC</p>
     </div>
   </div>
 </div>
@@ -22,4 +22,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-</style>
+</style> -->
