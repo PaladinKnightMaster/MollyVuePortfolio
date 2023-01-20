@@ -18,5 +18,10 @@ jobs:
         npm run build
         # run the command to test your client here
         # e.g. npm run test
+    - name: Add changes
+      run: git add .
+    - name: Commit changes
+      run: git commit -m "auto-build and test"
     - name: Push changes
-      run: git push main
+      run: git push origin main
+
