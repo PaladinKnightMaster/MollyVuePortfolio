@@ -1,0 +1,19 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Client
+      run: |
+        cd daniel-portfolio-client
+        npm run build
+        # run the command to build your client here
+        # e.g. npm install && npm run build
