@@ -47,28 +47,9 @@
 </template>
 
 <script>
-import Login from "./Login.vue";
 import ProgressBar from "./ProgressBar.vue";
-import { onMounted } from "vue";
 export default {
   setup() {
-    onMounted(() => {
-      // hideOnScroll()
-    });
-    function hideOnScroll() {
-      let nav = document.querySelector("#navBar");
-      let prevScrollpos = window.scrollY;
-      console.log(nav);
-      window.onscroll = function () {
-        let currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-          nav.style.top = "0px";
-        } else {
-          nav.style.top = "-250px";
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    }
     return {
       scrollTo(x) {
         console.log(x);
@@ -91,7 +72,7 @@ export default {
       },
     };
   },
-  components: { Login, ProgressBar },
+  components: { ProgressBar },
 };
 </script>
 

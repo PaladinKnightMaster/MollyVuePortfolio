@@ -9,23 +9,13 @@
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
+
 import { onMounted, ref, watchEffect } from "vue";
 
 export default {
-props:{
-
-       },
-  setup(props) {
-    const editable = ref({});
-    
-    onMounted(() => {
-
-    });
-    watchEffect(() => {});
-
+  setup() {
     return {
-      editable,
+
       }
     }
   }

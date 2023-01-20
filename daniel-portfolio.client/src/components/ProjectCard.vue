@@ -2,7 +2,7 @@
   <div class="d-block d-md-none">
        <div class="content-hover border-0">
       <div class="d-flex justify-content-between">
-      
+
         <div class="d-flex align-items-center">
           <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
           <a
@@ -53,11 +53,6 @@
     </div>
     <div class="content-hover border-0">
       <div class="d-flex justify-content-between">
-        <!-- <i
-          v-motion-slide-visible-once-bottom
-          :delay="400"
-          class="mdi mdi-folder fs-3 text-warning"
-        ></i> -->
         <div class="d-flex align-items-center">
           <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
           <a
@@ -102,13 +97,11 @@
 
   </div>
 
-  
- 
+
+
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
-import { onMounted, ref, watchEffect } from "vue";
 import GitHubIcon from "./socialIcons/GitHubIcon.vue";
 
 export default {
@@ -116,11 +109,7 @@ export default {
         project: { type: Object, required: true },
     },
     setup(props) {
-        const editable = ref({});
-        onMounted(() => { });
-        watchEffect(() => { });
         return {
-            editable,
         };
     },
     components: { GitHubIcon }

@@ -2,31 +2,17 @@
 <div class="row ">
   <div>
     <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
-<polygon class="" style="fill: ;" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
-<polygon class="" style="opacity: 1;fill: #0e9382;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+<polygon class="" style="fill: ;" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon>
+<polygon class="" style="opacity: 1;fill: #0e9382;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon>
 <polygon class="" style="opacity: 1;fill: #14a084;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
   </div>
 </div>
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
-import { onMounted, ref, watchEffect } from "vue";
-
 export default {
-props:{
-
-       },
-  setup(props) {
-    const editable = ref({});
-    
-    onMounted(() => {
-
-    });
-    watchEffect(() => {});
-
+  setup() {
     return {
-      editable,
       }
     }
   }

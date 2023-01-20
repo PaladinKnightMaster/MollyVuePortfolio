@@ -2,7 +2,7 @@
   <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
-        <PhoneIcon/>
+        <PhoneIcon />
         <GitHubIcon />
         <LinkedInIcon class="linkedIn-icon" />
       </div>
@@ -12,68 +12,56 @@
         <a
           href="mailto:daniel97.le@gmail.com"
           target="_blank"
-          class="email font-1 fs-3 text-light "
+          class="email font-1 fs-3 text-light"
         >
-        daniel97.le@gmail.com
+          daniel97.le@gmail.com
         </a>
       </div>
     </div>
   </div>
 
   <!-- SECTION FOOTER  -->
-  <div class="container-fluid bg-dark py-4 test" >
+  <div class="container-fluid bg-dark py-4 test">
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center icons d-md-none">
-           <PhoneIcon />
-        <GitHubIcon  />
-        <LinkedInIcon  />
+        <PhoneIcon />
+        <GitHubIcon />
+        <LinkedInIcon />
       </div>
       <div class="col-md-12 text-center">
         <p>Designed & Built by <b> Tung Le</b></p>
-         <p>Copyright &copy; 2023 Tung Le</p>
+        <p>Copyright &copy; 2023 Tung Le</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
-import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../../AppState.js";
-import { logger } from "../../utils/Logger.js";
-import Pop from "../../utils/Pop.js";
+import { onMounted, ref } from "vue";
 import GitHubIcon from "./GitHubIcon.vue";
 import LinkedInIcon from "./LinkedInIcon.vue";
 import PhoneIcon from "./PhoneIcon.vue";
 
 export default {
-  props: {},
-  setup(props) {
-    const editable = ref({});
-     const scrollY = ref(0);
+  setup() {
+    const scrollY = ref(0);
     onMounted(() => {
-
-        window.addEventListener("scroll", () => {
-                scrollY.value = window.scrollY;
-
-                if (scrollY.value >= 9000) {
-                 let socialBar = document.getElementById('socialBar')
-                 socialBar.classList.toggle= 'fixed-bottom'
-
-                }
-            });
+      window.addEventListener("scroll", () => {
+        scrollY.value = window.scrollY;
+        if (scrollY.value >= 9000) {
+          let socialBar = document.getElementById("socialBar");
+          socialBar.classList.toggle = "fixed-bottom";
+        }
+      });
     });
-    watchEffect(() => {});
-    return {
-      editable,
-    };
+    return {};
   },
   components: { GitHubIcon, LinkedInIcon, PhoneIcon },
 };
 </script>
 
 <style lang="scss" scoped>
-.icons   {
+.icons {
   font-size: 10rem !important;
 }
 

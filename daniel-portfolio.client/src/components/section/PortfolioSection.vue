@@ -153,7 +153,7 @@
                Better After Books
               </p>
             </div>
-          
+
           </div>
           <div
             v-motion-slide-visible-once-bottom
@@ -364,7 +364,7 @@
                Tower
               </p>
             </div>
-           
+
           </div>
           <div
             v-motion-slide-visible-once-bottom
@@ -464,14 +464,8 @@ import { AppState } from "../../AppState.js";
 import GitHubIcon from "../socialIcons/GitHubIcon.vue";
 import ProjectCard from "../ProjectCard.vue";
 export default {
-  props: {},
-  setup(props) {
-    const editable = ref({});
-
-    onMounted(() => {});
-    watchEffect(() => {});
+  setup() {
     return {
-      editable,
       projects: computed(() => AppState.portfolioImages),
       archivedProjects: computed(() => AppState.archivedProjects),
       devProjects: computed(() => AppState.devProjects),

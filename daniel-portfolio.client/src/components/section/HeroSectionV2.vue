@@ -86,9 +86,10 @@
 
 <script>
 import { computed } from "@vue/reactivity";
-import { onMounted, ref, watchEffect } from "vue";
+import { onMounted, ref } from "vue";
 import ParticleComponent from "../ParticleComponent.vue";
 import { AppState } from "../../AppState.js";
+import GentleWave from "./GentleWave.vue";
 
 export default {
   name: "LocomotiveSection",
@@ -107,7 +108,7 @@ export default {
       spaceman: computed(() => AppState.spaceman)
     };
   },
-  components: { ParticleComponent },
+  components: { ParticleComponent, GentleWave },
 };
 </script>
 

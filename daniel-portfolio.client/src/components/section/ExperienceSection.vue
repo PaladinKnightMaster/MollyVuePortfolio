@@ -261,12 +261,14 @@ import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
 import CartoonFrame from "../cardEffect/CartoonFrame.vue";
 import ParallaxMouse from "../cardEffect/ParallaxMouse.vue";
-
+import ResumeLink from "../socialIcons/ResumeLink.vue";
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
-    onMounted(() => {});
+    onMounted(() => {
+
+    });
     watchEffect(() => {});
 
     return {
@@ -284,18 +286,22 @@ export default {
       filterImages(type, button) {
         // Get the list of all images
         const imageList = document.querySelectorAll(".image-item");
+
         const buttonList = document.querySelectorAll(".filter-button");
         // Remove the "active" class from all buttons
         buttonList.forEach((btn) => {
           btn.classList.remove("active");
         });
+        button.target.classList.add("active");
 
         if (type !== "reset") {
           button.target.classList.add("active");
         }
+
         // Hide all images
         imageList.forEach((image) => {
-          if (image.__vnode.props.type != type) {
+          const skillType = image.getAttribute("type");
+          if (skillType != type) {
             image.style.display = "none";
             image.style.opacity = 0;
             image.style.transform = "scale(0.1)";
@@ -337,7 +343,6 @@ export default {
   components: { CartoonFrame, ParallaxMouse },
 };
 </script>
-
 <style lang="scss" scoped>
 
 
