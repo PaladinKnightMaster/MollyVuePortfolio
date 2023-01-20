@@ -10,7 +10,6 @@
     <!-- The main page -->
     <transition name="fade" mode="out-in" appear>
       <div class="main-page" v-if="mainLoaded">
-        <!-- Add your main page content here -->
         <HeroSectionV2 />
         <AboutSection />
 
@@ -21,24 +20,19 @@
         <ContactSection />
         <div class="position-relative"></div>
         <SocialBar />
-        <!-- <EmailBar/> -->
+
       </div>
     </transition>
   </div>
 </template>
 
 <script>
-import EmailBar from "../components/socialIcons/EmailBar.vue";
 import AboutSection from "../components/section/AboutSection.vue";
 import ContactSection from "../components/section/ContactSection.vue";
 import PortfolioSection from "../components/section/PortfolioSection.vue";
 import ExperienceSection from "../components/section/ExperienceSection.vue";
 import SocialBar from "../components/socialIcons/SocialBar.vue";
 import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
-import Pop from "../utils/Pop";
-import { onMounted } from "vue";
-// import LoadingAnimation from "../components/LoadingAnimation.vue";
-
 export default {
   data() {
 
@@ -57,9 +51,7 @@ export default {
     ExperienceSection,
     ContactSection,
     SocialBar,
-    EmailBar,
     HeroSectionV2,
-    // LoadingAnimation
   },
 };
 </script>

@@ -12,7 +12,7 @@
         <a
           href="mailto:daniel97.le@gmail.com"
           target="_blank"
-          class="email font-1 fs-3 text-light"
+          class="email font-1 fs-3 text-light "
         >
         daniel97.le@gmail.com
         </a>
@@ -86,14 +86,7 @@ export default {
   color: turquoise !important;
   transition: all 0.5s ease-out;
 }
-.email-icon:after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: #fff;
-}
+
 .linkedIn-icon:after {
   content: "";
   display: block;
