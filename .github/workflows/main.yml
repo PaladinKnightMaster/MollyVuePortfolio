@@ -14,7 +14,6 @@ jobs:
     - name: Build and Test Client
       run: |
         cd daniel-portfolio.client
-        npm install
         npm run build
         # run the command to test your client here
         # e.g. npm run test
