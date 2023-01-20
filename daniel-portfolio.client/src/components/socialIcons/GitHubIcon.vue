@@ -1,7 +1,7 @@
 <template>
-  <!-- <a href="https://github.com/TungLe0319">
+  <a href="https://github.com/daniel-le97">
     <i class="mdi mdi-github fs-3 text-light" title="Github Link"></i>
-  </a> -->
+  </a>
 </template>
 
 <script>

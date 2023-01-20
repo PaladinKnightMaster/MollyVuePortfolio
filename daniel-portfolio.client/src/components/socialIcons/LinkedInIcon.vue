@@ -1,7 +1,7 @@
 <template>
-  <!-- <a href="https://www.linkedin.com/in/tung-le0319/" class="">
+  <a href="https://www.linkedin.com/in/daniel-le97/" class="">
     <i class="mdi mdi-linkedin fs-3 text-light" title="Github"></i>
-  </a> -->
+  </a>
 </template>
 
 <script>

@@ -99,7 +99,7 @@
 import { computed } from "@vue/reactivity";
 import { useParallax } from "@vueuse/core";
 import { onMounted, ref, watchEffect } from "vue";
-import ParallaxMouse from "../ParallaxMouse.vue";
+import ParallaxMouse from "../cardEffect/ParallaxMouse.vue";
 
 
 export default {

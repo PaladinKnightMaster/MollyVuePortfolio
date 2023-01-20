@@ -2,7 +2,7 @@
   <div class="container-fluid position-absolute start-50">
     <div class="row">
       <div class="col-2 d-flex flex-column align-items-start">
-        <p class="email-icon">tung.le0319@gmail.com</p>
+        <p class="email-icon">daniel97.le@gmail.com</p>
       </div>
     </div>
   </div>
@@ -15,9 +15,9 @@ import { onMounted, ref, watchEffect } from "vue";
 export default {
 
   setup() {
-  
 
- 
+
+
     return {
       editable,
     };

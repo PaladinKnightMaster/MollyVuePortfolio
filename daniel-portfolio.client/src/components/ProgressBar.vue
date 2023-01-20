@@ -14,8 +14,8 @@
       id="progress"
       class=""
     >
-    
-    <img src="../assets/img/space-logo.jpeg" alt="" width="60" height="60" class="elevation-6 rounded-circle">
+
+    <img src="https://purepng.com/public/uploads/medium/purepng.com-astronautastronautcosmonauttrainedtrainedspaceflightpilotspace-travelersclipart-1421526661352yhacr.png" alt="" width="80" height="90" class="">
 
       <!-- <p class="position-absolute start-0 top-0 font-1 text-success">
         {{ percent }}
@@ -114,7 +114,7 @@ transition: all 0.25s ease;
   background: rgb(250, 236, 236);
 }
 #progress{
- 
+
   position: relative;
   .tester2{
  opacity: 0;

@@ -10,11 +10,11 @@
         class="col-1 text-center d-flex justify-content-center align-items-center"
       >
         <a
-          href="mailto:tung.le0319@gmail.com"
+          href="mailto:daniel97.le@gmail.com"
           target="_blank"
           class="email font-1 fs-3 text-light"
         >
-          tung.le0319@gmail.com
+        daniel97.le@gmail.com
         </a>
       </div>
     </div>
@@ -39,12 +39,12 @@
 <script>
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../AppState.js";
-import { logger } from "../utils/Logger.js";
-import Pop from "../utils/Pop.js";
-import GitHubIcon from "./socialIcons/GitHubIcon.vue";
-import LinkedInIcon from "./socialIcons/LinkedInIcon.vue";
-import PhoneIcon from "./socialIcons/PhoneIcon.vue";
+import { AppState } from "../../AppState.js";
+import { logger } from "../../utils/Logger.js";
+import Pop from "../../utils/Pop.js";
+import GitHubIcon from "./GitHubIcon.vue";
+import LinkedInIcon from "./LinkedInIcon.vue";
+import PhoneIcon from "./PhoneIcon.vue";
 
 export default {
   props: {},
@@ -55,11 +55,11 @@ export default {
 
         window.addEventListener("scroll", () => {
                 scrollY.value = window.scrollY;
-             
+
                 if (scrollY.value >= 9000) {
                  let socialBar = document.getElementById('socialBar')
                  socialBar.classList.toggle= 'fixed-bottom'
-                 
+
                 }
             });
     });

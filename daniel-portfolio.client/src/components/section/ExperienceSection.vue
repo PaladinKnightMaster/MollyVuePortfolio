@@ -23,10 +23,10 @@
               Education
             </p>
           </div>
-          
+
         </div>
         <div class="col-md-6">
-        
+
             <!-- <div class="v-motion">
               <img
                 src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
@@ -40,7 +40,7 @@
   <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="Front image" class="front-image">
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="Back image" class="back-image" width="175" height="175">
 </div>
-      
+
         </div>
 
         <div class="col-md-6 align-items-center">
@@ -196,7 +196,7 @@
             ></i> -->
           </p>
         </div>
-      
+
       </div>
 
       <!-- SECTION DEVSOPPORTUNITIES -->
@@ -237,7 +237,7 @@
         </div>
        </div>
         </div>
-       
+
         <div class="col-md-6">
           <p
             v-motion-slide-visible-once-bottom
@@ -246,7 +246,7 @@
           >
         I am attempting to teach myself on learning K3s Kubernetes and Docker. Kubernetes and Docker are popular technologies for containerizing and deploying applications in a flexible and scalable way.
 I am excited to continue learning and to explore the ways in which they can help me to improve the performance, security, and scalability of my applications. I am also looking into the implementation and documentation of both technologies, as I believe that a strong understanding of their underlying principles and best practices is essential for effective development.
-          
+
           </p>
         </div>
       </div>
@@ -259,8 +259,8 @@ I am excited to continue learning and to explore the ways in which they can help
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
-import CartoonFrame from "../CartoonFrame.vue";
-import ParallaxMouse from "../ParallaxMouse.vue";
+import CartoonFrame from "../cardEffect/CartoonFrame.vue";
+import ParallaxMouse from "../cardEffect/ParallaxMouse.vue";
 
 export default {
   props: {},

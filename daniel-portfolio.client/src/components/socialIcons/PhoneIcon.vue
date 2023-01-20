@@ -1,7 +1,7 @@
 <template>
-  <!-- <a href="tel:208905308">
-    <i class="mdi mdi-phone fs-3 text-light" title="Github Link"></i>
-  </a> -->
+  <a href="tel:208905308">
+    <i class="mdi mdi-phone fs-3 text-light" title="Phone Number"></i>
+  </a>
 </template>
 
 <script>
