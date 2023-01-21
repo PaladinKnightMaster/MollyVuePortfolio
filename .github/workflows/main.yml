@@ -40,7 +40,7 @@ jobs:
           echo "Changes detected in $CLIENT_DIR, proceeding with build and deploy"
         else
           echo "No changes detected in $CLIENT_DIR, exiting workflow"
-          exit 0
+          exit 1
         fi
     - name: Build client
       run: npm ci --prefix $CLIENT_DIR && npm run build --prefix $CLIENT_DIR
