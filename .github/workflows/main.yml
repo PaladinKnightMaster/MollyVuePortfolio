@@ -3,25 +3,20 @@
 # on:
 #   push:
 #     branches:
-#       - main
+name: Build and Deploy
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+on:
+  push:
+    branches:
+      - main
 
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Build and Test Client
-#       run: |
-#         cd daniel-portfolio.client
-#         npm install
-#         npm run build
-#         # run the command to test your client here
-#         # e.g. npm run test
-#     - name: Add changes
-#       run: git add .
-#     - name: Commit changes
-#       run: git commit -m "auto-build and test"
-#     - name: Push changes
-#       run: git push origin main
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build client
+      run: npm ci --prefix daniel-portfolio && npm run build --prefix daniel-portfolio
