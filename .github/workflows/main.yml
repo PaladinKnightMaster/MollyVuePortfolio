@@ -13,18 +13,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-   - name: Get commit message
-      id: get_message
-      run: |
-        message=$(curl -s https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA | jq -r .commit.message)
-        echo "::set-output name=message::$message"
+
     - name: Build client
       run: npm ci --prefix $CLIENT_DIR && npm run build --prefix $CLIENT_DIR
+    - name: Get commit message
+      run: |
+        message=$(jq -r .head_commit.message $GITHUB_EVENT_PATH)
+        echo "::set-output name=message::$message"
     - name: Commit and push
       run: |
         git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
         git config --local user.name "$GITHUB_ACTOR"
         git add -A
-        git commit -m "${{ steps.get_message.outputs.message }}"
+        git commit -m "${{ steps.get_commit_message.outputs.message }}"
         git push
 
