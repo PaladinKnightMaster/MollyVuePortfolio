@@ -16,15 +16,10 @@ jobs:
 
     - name: Build client
       run: npm ci --prefix $CLIENT_DIR && npm run build --prefix $CLIENT_DIR
-    - name: Get commit message
-      run: |
-        message=$(jq -r .head_commit.message $GITHUB_EVENT_PATH)
-        echo "::set-output name=message::$message"
     - name: Commit and push
       run: |
         git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
         git config --local user.name "$GITHUB_ACTOR"
         git add -A
-        git commit -m "${{ steps.get_commit_message.outputs.message }}"
+        git commit -m "Build and Deploy"
         git push
-
