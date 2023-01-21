@@ -1,32 +1,3 @@
-# name: Build and Test
-
-# on:
-#   push:
-#     branches:
-# name: Build and Deploy
-
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v2
-
-#     - name: Build client
-#       run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
-#     - name: Commit and push
-#       run: |
-#         git config --local user.email "daniel97.le@gmail.com"
-#         git config --local user.name "daniel-le97"
-#         git add -A
-#         git commit -m "Build and Deploy"
-#         git push
 name: Build and Deploy
 
 on:
@@ -37,17 +8,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      CLIENT_DIR: daniel-portfolio.client
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
+   - name: Get commit message
+      id: get_message
+      run: |
+        message=$(curl -s https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA | jq -r .commit.message)
+        echo "::set-output name=message::$message"
     - name: Build client
-      run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
+      run: npm ci --prefix $CLIENT_DIR && npm run build --prefix $CLIENT_DIR
     - name: Commit and push
       run: |
         git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
         git config --local user.name "$GITHUB_ACTOR"
         git add -A
-        git commit -m "Build and Deploy"
+        git commit -m "${{ steps.get_message.outputs.message }}"
         git push
+
