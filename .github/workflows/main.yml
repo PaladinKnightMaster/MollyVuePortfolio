@@ -22,8 +22,6 @@ jobs:
       run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
     - name: Commit and push
       run: |
-        git config --local user.email "daniel97.le@gmail.com"
-        git config --local user.name "daniel-le97"
         git add -A
         git commit -m "Build and Deploy"
         git push
