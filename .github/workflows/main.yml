@@ -42,7 +42,6 @@ jobs:
           echo "No changes detected in $CLIENT_DIR, exiting workflow"
           exit 1
         fi
-        continue-on-error: false
     - name: Build client
       run: npm ci --prefix $CLIENT_DIR && npm run build --prefix $CLIENT_DIR
     - name: Commit and push
