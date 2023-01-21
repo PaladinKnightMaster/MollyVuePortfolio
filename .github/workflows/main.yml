@@ -17,11 +17,24 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
+    - name: Set environment variables
+      run: source daniel-portfolio.client/env.sh
     - name: Build client
-      run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
+      run: npm ci --prefix $CLIENT && npm run build --prefix $CLIENT
     - name: Commit and push
       run: |
+        git config --local user.email $GIT_USER
+        git config --local user.name $GIT_EMAIL
         git add -A
         git commit -m "Build and Deploy"
         git push
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+#     - name: Set environment variables
+#       run: source daniel-portfolio.client/env.sh
+#     - name: Build client
+#       run: npm ci && npm run build --prefix $CLIENT_FOLDER
