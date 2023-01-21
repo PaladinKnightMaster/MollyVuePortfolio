@@ -3,6 +3,30 @@
 # on:
 #   push:
 #     branches:
+# name: Build and Deploy
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+
+#     - name: Build client
+#       run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
+#     - name: Commit and push
+#       run: |
+#         git config --local user.email "daniel97.le@gmail.com"
+#         git config --local user.name "daniel-le97"
+#         git add -A
+#         git commit -m "Build and Deploy"
+#         git push
 name: Build and Deploy
 
 on:
@@ -17,24 +41,13 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set environment variables
-      run: source daniel-portfolio.client/env.sh
+
     - name: Build client
-      run: npm ci --prefix $CLIENT && npm run build --prefix $CLIENT
+      run: npm ci --prefix daniel-portfolio.client && npm run build --prefix daniel-portfolio.client
     - name: Commit and push
       run: |
-        git config --local user.email $GIT_USER
-        git config --local user.name $GIT_EMAIL
+        git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+        git config --local user.name "$GITHUB_ACTOR"
         git add -A
         git commit -m "Build and Deploy"
         git push
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v2
-#     - name: Set environment variables
-#       run: source daniel-portfolio.client/env.sh
-#     - name: Build client
-#       run: npm ci && npm run build --prefix $CLIENT_FOLDER
