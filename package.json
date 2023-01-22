@@ -1,16 +1,23 @@
-
-  {
+{
     "name": "daniel-portfolio",
     "version": "1.0.0",
     "scripts": {
-      "build": "npm run setup:server",
-      "setup:app": "npm run setup:server && npm run setup:client",
-      "setup:client": "cd daniel-portfolio.client && npm i",
-      "setup:server": "cd daniel-portfolio && npm i",
-      "start": "node daniel-portfolio/index.js"
+        "build": "npm run setup:server",
+        "setup:app": "npm run setup:server && npm run setup:client",
+        "setup:client": "cd daniel-portfolio.client && npm i",
+        "setup:server": "cd daniel-portfolio && npm i",
+        "start": "node daniel-portfolio/index.js",
+        "prepare": "husky install"
     },
     "engines": {
-      "node": "^14.17.0"
+        "node": "^18.13.0"
+    },
+    "devDependencies": {
+        "husky": "^8.0.3"
+    },
+    "husky": {
+    "hooks": {
+      "pre-commit": "npm run build --prefix client"
     }
   }
-  
+}
