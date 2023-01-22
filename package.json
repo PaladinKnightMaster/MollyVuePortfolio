@@ -7,18 +7,9 @@
         "setup:app": "npm run setup:server && npm run setup:client",
         "setup:client": "cd daniel-portfolio.client && npm i",
         "setup:server": "cd daniel-portfolio && npm i",
-        "start": "node daniel-portfolio/index.js",
-        "prepare": "husky install"
+        "start": "node daniel-portfolio/index.js"
     },
     "engines": {
         "node": "^18.13.0"
-    },
-    "devDependencies": {
-        "husky": "^8.0.3"
-    },
-    "husky": {
-    "hooks": {
-      "pre-commit": "npm run build --prefix daniel-portfolio.client"
     }
-  }
 }
