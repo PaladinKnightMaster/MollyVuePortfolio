@@ -36,6 +36,26 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     },
-    "nuxt.isNuxtApp": false
+    "nuxt.isNuxtApp": false,
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#f710f8",
+      "activityBar.background": "#f710f8",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#5d5d03",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#e7e7e799",
+      "sash.hoverBorder": "#f710f8",
+      "statusBar.background": "#ce06cf",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#f710f8",
+      "statusBarItem.remoteBackground": "#ce06cf",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#ce06cf",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#ce06cf99",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#ce06cf"
   }
 }

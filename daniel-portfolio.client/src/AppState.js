@@ -5,7 +5,7 @@ export const AppState = reactive({
   user: {},
   /** @type {import('./models/Account.js').Account} */
   account: {},
-  spaceman: "./assets/img/spacemanFull.mp4",
+  spaceman: "src\assets\img\pexels-tima-miroshnichenko-5647328(1).mp4",
 
   percent: 0,
   // portfolioImages: [

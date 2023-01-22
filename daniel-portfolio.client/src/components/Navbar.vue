@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark  px-3">
     <div class="d-flex me-5">
-      <p class="mb-0 font-1 fs-3 text-light">Daniel Le</p>
+      <p class="mb-0 font-1 fs-3 text-light">Molly Nettleton</p>
       <p class="mb-0 ms-4 font-1 fs-3 text-light">
-        Full Stack SoftWare Developer
+        Full Stack Software Developer
       </p>
     </div>
     <button
@@ -42,7 +42,7 @@
       </ul>
       <!-- LOGIN COMPONENT HERE -->
     </div>
-    <ProgressBar />
+    <!-- <ProgressBar /> -->
   </nav>
 </template>
 
