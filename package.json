@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "build": "npm run setup:server",
+        "leggo": "cd daniel-portfolio.client && npm run build",
         "setup:app": "npm run setup:server && npm run setup:client",
         "setup:client": "cd daniel-portfolio.client && npm i",
         "setup:server": "cd daniel-portfolio && npm i",
