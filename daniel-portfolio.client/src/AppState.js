@@ -193,7 +193,7 @@ export const AppState = reactive({
     {
       title: `Task Master`,
       description:
-        "creating a task manager, where users can create multiple lists each with multiple items to complete on that list.They will demonstrate their understanding of the MVC Design pattern by completing this process utilizing services, controllers and models. In addition students will be able to persist data into local storage that will be retrieved on page refresh.",
+        "Creating a task manager, where users can create multiple lists each with multiple items to complete on that list.They will demonstrate their understanding of the MVC Design pattern by completing this process utilizing services, controllers and models. In addition students will be able to persist data into local storage that will be retrieved on page refresh.",
       tech: ["Node Js", "Vue", "BootStrap"],
       githubLink: "",
       externalLink: "https://tungle0319.github.io/TaskMaster/",

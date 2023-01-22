@@ -1,5 +1,5 @@
 <template>
-  <a href="https://www.linkedin.com/in/daniel-le97/" class="">
+  <a href="https://www.linkedin.com/in/mollynettleton/" class="">
     <i class="mdi mdi-linkedin fs-3 text-light" title="Github"></i>
   </a>
 </template>

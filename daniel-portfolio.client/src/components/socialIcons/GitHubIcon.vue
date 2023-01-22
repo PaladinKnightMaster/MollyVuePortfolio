@@ -1,5 +1,5 @@
 <template>
-  <a href="https://github.com/daniel-le97">
+  <a href="https://github.com/mollynettleton">
     <i class="mdi mdi-github fs-3 text-light" title="Github Link"></i>
   </a>
 </template>

@@ -56,7 +56,7 @@
         </div>
       </div>
 
-      <div class="row my-5 justify-content-center">
+      <!-- <div class="row my-5 justify-content-center">
         <div class="col-md-6 text-center">
           <p class="font-1 fs-4 text-warning">Current Favorite Song</p>
           <iframe
@@ -89,7 +89,7 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- <BlockQuote/> -->
   </section>

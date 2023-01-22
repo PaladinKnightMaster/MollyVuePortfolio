@@ -1,20 +1,21 @@
 <template>
   <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
-      <div class="col-2 d-flex flex-column align-items-start">
+      <div class="col-2 d-flex flex-column align-items-start mb-4">
         <PhoneIcon />
         <GitHubIcon />
-        <LinkedInIcon class="linkedIn-icon" />
+        <LinkedInIcon />
       </div>
+      
       <div
         class="col-1 text-center d-flex justify-content-center align-items-center"
       >
         <a
-          href="mailto:daniel97.le@gmail.com"
+          href="mailto:mollyelainen@gmail.com"
           target="_blank"
-          class="email font-1 fs-3 text-light"
+          class="email font-1 fs-4 text-light mb-4 ms-4 "
         >
-          daniel97.le@gmail.com
+          mollyelainen@gmail.com
         </a>
       </div>
     </div>

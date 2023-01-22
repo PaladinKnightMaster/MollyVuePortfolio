@@ -121,11 +121,11 @@
             :type="s.type"
             :key="s.id"
           >
-            <ParallaxMouse>
-              <CartoonFrame v-motion-roll-visible-once-left>
+            <!-- <ParallaxMouse> -->
+              <!-- <CartoonFrame v-motion-roll-visible-once-left> -->
                 <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
-              </CartoonFrame>
-            </ParallaxMouse>
+              <!-- </CartoonFrame> -->
+            <!-- </ParallaxMouse> -->
           </div>
         </div>
         <div
@@ -439,8 +439,8 @@ li + li {
 }
 
 .box {
-  border: solid black;
-  border-color: black;
+  // border: solid black;
+  // border-color: black;
   background-position: center;
   background-size: cover;
   transition: all 0.2s ease !important;
@@ -451,9 +451,9 @@ li + li {
 }
 
 .box3 {
-  border-width: 5px 3px 3px 5px;
-  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
-  transform: rotate(2deg);
+  // border-width: 5px 3px 3px 5px;
+  // border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+  // transform: rotate(2deg);
   padding: 5px;
 }
 
