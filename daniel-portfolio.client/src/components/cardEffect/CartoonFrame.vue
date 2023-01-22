@@ -53,15 +53,15 @@ export default {
   background-position: center;
   background-size: cover !important;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
- 
+
 }
 
 
 .card-container{
-  
-  
+
+
     border-radius: 16px;
- 
+
 }
 .card-container:hover {
   transform: scale(1.14);
@@ -70,7 +70,8 @@ export default {
   filter: brightness(120%);
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 #f7d778;
-  
+
 }
 
 </style>
+<!-- test -->
