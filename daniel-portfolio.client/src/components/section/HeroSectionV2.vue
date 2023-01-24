@@ -14,7 +14,7 @@
       <div class="row justify-content-between w-100">
         <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
           <p v-motion-slide-bottom :delay="600" class="text-start display-6 ms-5 font-1 mb-0 text-shadow text-light">
-            creative
+            Creator
           </p>
           <p v-motion-slide-bottom :delay="1000" class="font-1 display-7 mb-0 text-shadow text-light">
             Problem Solver <b class="display-6">&</b>

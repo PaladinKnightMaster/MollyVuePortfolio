@@ -114,7 +114,7 @@
             </li>
           </ul>
         </div>
-        <div class="image-container row g-3 justify-content-center">
+        <div class="image-container row g-3 justify-content-center bg-dark rounded-5 pb-3">
           <div
             class="col-6 col-md-2 image-item"
             v-for="s in skillsIcons"
@@ -344,9 +344,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-
-
 .card-1 {
   perspective: 1000px;
   position: relative;
@@ -448,6 +445,8 @@ li + li {
 .box:hover {
   border: solid #f7d778;
   border-color: #f7d778;
+  border-radius: 20%;
+  transition: all 0.5s ease !important;
 }
 
 .box3 {

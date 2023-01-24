@@ -13,7 +13,7 @@
         <a
           href="mailto:mollyelainen@gmail.com"
           target="_blank"
-          class="email font-1 fs-4 text-light mb-4 ms-4 "
+          class="email font-1 fs-4 text-light mb-5 ms-4 "
         >
           mollyelainen@gmail.com
         </a>
